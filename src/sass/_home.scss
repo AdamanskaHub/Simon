@@ -1,0 +1,40 @@
+.container {
+    scroll-snap-type: y mandatory;
+  }
+.intro {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .blob{
+        position: absolute;
+        width:450px;
+        height: 450px;
+        border-radius: 30% 70% 70% 30% / 30% 47% 53% 70%;
+        background-color: darksalmon;
+        z-index: -1;
+        animation: blobbing 12s infinite ease;
+    }
+    h1{
+        font-size: 12rem;
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        max-width: 960px;
+    }
+    p{
+        font-size: 2.4rem;
+        font-family: 'Lato', sans-serif;
+        margin-top: 2rem;
+    }
+}
+
+.goal {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
