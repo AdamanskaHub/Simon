@@ -1,14 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import "../sass/main.scss"
 
 // import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = (props) => {
+  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 
-  <div className="container">
+  return(
+<div className="container">
     <SEO title="Home" />
 
     <div className="menu">
@@ -22,7 +24,9 @@ const IndexPage = () => (
     
     <section className="intro">
       <div className="blob"></div>
-      <h1>At the tip of a thought</h1>
+      <h1>
+      {data.title}
+      </h1>
       <p>Some text</p>
     </section>
     
@@ -38,6 +42,25 @@ const IndexPage = () => (
       <p>my goals p</p>
     </section>
   </div>
-)
+  )
+  
+}
+
+
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              title
+          }
+        }
+      }
+    }
+  }
+}`
