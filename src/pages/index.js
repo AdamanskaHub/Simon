@@ -10,6 +10,15 @@ const IndexPage = () => (
 
   <div className="container">
     <SEO title="Home" />
+
+    <div className="menu">
+      <h3>
+      <Link to="/">Home</Link>
+      </h3>
+      <h3>
+      <Link to="/blog/">Blog</Link>
+      </h3>
+    </div>
     
     <section className="intro">
       <div className="blob"></div>
