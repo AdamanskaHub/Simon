@@ -1,3 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap');
+// @import 'variables/var';
+// @import 'variables/triangles';
+
+// @import 'components/nav';
+@import 'var';
+@import 'home';
+@import 'animations';
+
+// @import 'pages/about';
+// @import 'pages/work';
+// @import 'pages/worktwo';
+// @import 'pages/contact';
+
 *,
 *::before,
 *::after {
@@ -15,6 +30,7 @@ html {
 body {
     height:100%;
     box-sizing: border-box;
+    background: linear-gradient(90deg, $bg-start 0%, $bg-end 100%);
 }
 
 .base {
@@ -44,17 +60,3 @@ body {
 }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap');
-// @import 'variables/var';
-// @import 'variables/triangles';
-
-// @import 'components/nav';
-@import 'var';
-@import 'home';
-@import 'animations';
-
-// @import 'pages/about';
-// @import 'pages/work';
-// @import 'pages/worktwo';
-// @import 'pages/contact';

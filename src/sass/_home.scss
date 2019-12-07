@@ -14,7 +14,7 @@
             text-decoration: none;
             color: $text;
             &:hover {
-                color: $accent;
+                color: red;
             }
         }
         
@@ -38,7 +38,7 @@
         width:450px;
         height: 450px;
         border-radius: 30% 70% 70% 30% / 30% 47% 53% 70%;
-        background-color: $accent;
+        background-color: red;
         z-index: -1;
         animation: blobbing 12s infinite ease;
     }
@@ -62,5 +62,5 @@
     scroll-snap-align: start;
     width: 100vw;
     height: 100vh;
-    background-color: $accent;
+    background-color: red;
 }

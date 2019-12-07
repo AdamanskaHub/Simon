@@ -25,9 +25,9 @@ const IndexPage = (props) => {
     <section className="intro">
       <div className="blob"></div>
       <h1>
-      {data.title}
+      {data.megatitle}
       </h1>
-      <p>Some text</p>
+      <p>{data.subtitle}</p>
     </section>
     
     {/* <p>Welcome to your new Gatsby site.</p>
@@ -38,8 +38,16 @@ const IndexPage = (props) => {
     {/* <Link to="/page-2/">Go to page 2</Link> */}
 
     <section className="goal">
-      <h2>My goal</h2>
-      <p>my goals p</p>
+      <h2>{data.titleone}</h2>
+      <p>{data.paraone}</p>
+      <h2>{data.titletwo}</h2>
+      <p>{data.paratwo}</p>
+
+    </section>
+    <section className="thirdsection">
+      <h2>{data.titlethree}</h2>
+      <p>{data.parathree}</p>
+
     </section>
   </div>
   )
@@ -57,7 +65,14 @@ export const query = graphql`
         node {
           childMarkdownRemark {
             frontmatter {
-              title
+              megatitle
+              subtitle
+              titleone
+              paraone
+              titletwo
+              paratwo
+              titlethree
+              parathree
           }
         }
       }

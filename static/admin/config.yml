@@ -13,6 +13,12 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          # - {label: Intro text, name: intro, widget: text}
+          - {label: MegaTitle, name: megatitle, widget: string}
+          - {label: SubTitle, name: subtitle, widget: string}
+          - {label: TitleOne, name: titleone, widget: string}
+          - {label: ParaOne, name: paraone, widget: string}
+          - {label: TitleTwo, name: titletwo, widget: string}
+          - {label: ParaTwo, name: paratwo, widget: string}
+          - {label: TitleThree, name: titlethree, widget: string}
+          - {label: ParaThree, name: parathree, widget: string}
           # - {label: Image, name: image, widget: image}
