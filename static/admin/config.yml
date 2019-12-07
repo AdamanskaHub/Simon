@@ -21,4 +21,4 @@ collections:
           - {label: ParaTwo, name: paratwo, widget: string}
           - {label: TitleThree, name: titlethree, widget: string}
           - {label: ParaThree, name: parathree, widget: string}
-          # - {label: Image, name: image, widget: image}
+          - {label: Image, name: image, widget: image}

@@ -33,14 +33,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(90deg, $bg-start 0%, $bg-end 100%);
     .blob{
         position: absolute;
         width:450px;
         height: 450px;
         border-radius: 30% 70% 70% 30% / 30% 47% 53% 70%;
-        background-color: red;
-        z-index: -1;
-        animation: blobbing 12s infinite ease;
+        background-color: rgba(255,255,255,.5);
+        mix-blend-mode: overlay;
+        z-index: 0;
+        animation: blobbing 20s infinite ease;
     }
     h1{
         font-size: 12rem;
@@ -58,9 +60,8 @@
     }
 }
 
-.goal {
+.sectiontwo {
     scroll-snap-align: start;
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }

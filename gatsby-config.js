@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Simon Chammas`,
+    description: `Meditation, focus, relaxation`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -11,11 +11,11 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+        // path: path.join(__dirname, `src`, `images`),
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -43,9 +43,28 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    'gatsby-transformer-remark',
+    // 'gatsby-transformer-remark',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must
+          // // go before gatsby-remark-images
+          // `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: { maxWidth: 590},
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: { maxWidth: 590},
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-netlify-cms`,
   ],
 }

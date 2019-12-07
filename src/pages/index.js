@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import "../sass/main.scss"
 
 // import Layout from "../components/layout"
-// import Image from "../components/image"
+import img from "../images/portrait.png"
 import SEO from "../components/seo"
 
 const IndexPage = (props) => {
@@ -37,18 +37,23 @@ const IndexPage = (props) => {
     </div> */}
     {/* <Link to="/page-2/">Go to page 2</Link> */}
 
-    <section className="goal">
+    <section className="sectiontwo">
+      <div className="portrait">
+        {/* <img src={data.image} alt="Simon" /> */}
+      </div>
+      <div className="sectiontwo__text">
       <h2>{data.titleone}</h2>
       <p>{data.paraone}</p>
       <h2>{data.titletwo}</h2>
       <p>{data.paratwo}</p>
-
+      </div>
     </section>
-    <section className="thirdsection">
+
+    <section className="sectionthree">
       <h2>{data.titlethree}</h2>
       <p>{data.parathree}</p>
 
-    </section>
+    </section>s
   </div>
   )
   
@@ -74,6 +79,7 @@ export const query = graphql`
               titleone
               titlethree
               titletwo
+              // image 
             }
           }
       }
