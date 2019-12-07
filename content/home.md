@@ -15,5 +15,6 @@ titlethree: My mission
 parathree: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt arcu
   ullamcorper sollicitudin magna sociis ac volutpat.
+image: /assets/pug.jpg
 ---
 
