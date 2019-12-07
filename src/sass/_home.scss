@@ -57,25 +57,17 @@
     p{
         font-size: 2.4rem;
         font-family: 'Lato', sans-serif;
-        color: $text;
+        color: rgba(255,255,255,.2);
         margin-top: 2rem;
     }
 }
 
-// .title{
-//     height: 5.4rem;
-//     position: relative;
-//     background-color: whitesmoke;
-//     &__underline{
-//         background: linear-gradient(90deg,#8545EC 0%, #6841E7 100%);
-//     }
-// }
 .fancy {
     background-image: linear-gradient(90deg,#8545EC 0%, #6841E7 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 2.2rem;
-  background-position: 0 88%;
-  transition: background-size 0.25s 
+    background-repeat: no-repeat;
+    background-size: 100% 2.2rem;
+    background-position: 0 88%;
+    transition: background-size 0.25s 
 }
 
 .section {
@@ -229,4 +221,58 @@
         animation: bubbling 5s ease-in-out infinite;
     }
 
+}
+.sectionfour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form {
+        margin-block-start: 4rem;
+        min-width: 360px;
+        max-width: 500px;
+        width: 100%;
+        p{
+            margin-block-end: 2rem;
+            label {
+                display: block;
+                padding-block-end: 1rem;
+                color: rgba(255,255,255,.7)
+            }
+            input, textarea {
+                border: none;
+                color: #fff;
+                padding: 1rem;
+                width: 100%;
+                background-color: rgba(255,255,255,.25);
+                border: 1px rgba(0,0,0,0) solid;
+                &:focus{
+                    outline: none;
+                    border: 1px #fff solid;
+                }
+            }
+            button {
+                text-align: center;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                color: #fff;
+                background: linear-gradient(90deg,#A355EE 0%, #8650E9 100%);
+                justify-self: center;
+                align-self: center;
+border: none;
+transition: .5s ease;
+&:focus{
+
+    outline: none;
+}
+&:hover{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,.3);
+-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,.3);
+box-shadow: 0px 0px 5px 0px rgba(255,255,255,.3);
+
+}
+            }
+            
+        }
+    }
 }
