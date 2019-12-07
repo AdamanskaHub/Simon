@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import "../sass/main.scss"
 
 // import Layout from "../components/layout"
-import img from "../images/portrait.png"
+import img from "../images/gatsby-astronaut.png"
 import SEO from "../components/seo"
 
 const IndexPage = (props) => {
@@ -26,6 +26,9 @@ const IndexPage = (props) => {
       <div className="blob"></div>
       <h1>
       {data.megatitle}
+      </h1>
+      <h1>
+      {data.megatitlex}
       </h1>
       <p>{data.subtitle}</p>
     </section>
@@ -65,6 +68,7 @@ export const query = graphql`
           childMarkdownRemark {
             frontmatter {
               megatitle
+              megatitlex
               paraone
               parathree
               paratwo

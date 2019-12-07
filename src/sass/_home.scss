@@ -12,9 +12,10 @@
         font-family: 'Lato', sans-serif;
         a{
             text-decoration: none;
-            color: $text;
+            color: rgba(255,255,255,.3);
+            transition: .5s;
             &:hover {
-                color: red;
+                color: rgba(255,255,255,.7);
             }
         }
         
@@ -24,7 +25,7 @@
 .container {
     scroll-snap-type: y mandatory;
     overflow: auto;
-  }
+}
 .intro {
     scroll-snap-align: start;
     width: 100vw;
@@ -42,7 +43,7 @@
         background-color: rgba(255,255,255,.5);
         mix-blend-mode: overlay;
         z-index: 0;
-        animation: blobbing 20s infinite ease;
+        animation: blobbing 14s infinite ease;
     }
     h1{
         font-size: 12rem;
