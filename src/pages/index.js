@@ -34,19 +34,19 @@ const IndexPage = (props) => {
     </section>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
 
-    <section className="sectiontwo">
+    <section className="section sectiontwo">
       <div className="portrait">
-        {/* <img src={data.image} alt="Simon" /> */}
+        <img src={data.image} alt="Simon" />
       </div>
-      <div className="sectiontwo__text">
-      <h2>{data.titleone}</h2>
+      <div>
+      <h2><span className="fancy">{data.titleone}</span></h2>
       <p>{data.paraone}</p>
-      <h2>{data.titletwo}</h2>
+      <h2><span className="fancy">{data.titletwo}</span></h2>
       <p>{data.paratwo}</p>
       </div>
     </section>
 
-    <section className="sectionthree">
+    <section className="section section__three">
       <h2>{data.titlethree}</h2>
       <p>{data.parathree}</p>
 
@@ -77,6 +77,7 @@ export const query = graphql`
               titleone
               titlethree
               titletwo
+              image
             }
           }
       }
