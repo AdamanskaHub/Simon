@@ -1,5 +1,5 @@
 ---
-megatitle: This is the mega title
+megatitle: At the tip of a thought
 subtitle: The focus and all subtitle
 titleone: My goal
 paraone: >-
