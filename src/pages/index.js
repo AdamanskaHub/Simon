@@ -46,10 +46,21 @@ const IndexPage = (props) => {
       </div>
     </section>
 
-    <section className="section section__three">
-      <h2>{data.titlethree}</h2>
+    <section className="section sectionthree">
+      <h2><span className="fancy">{data.titlethree}</span></h2>
       <p>{data.parathree}</p>
+      <div className="bubble bubble1"></div>
+      <div className="bubble bubble2"></div>
+      <div className="bubble bubble3"></div>
+      <div className="bubble bubble4"></div>
+      <div className="bubble bubble5"></div>
+      <div className="bubble bubble6"></div>
+      <div className="bubble bubble7"></div>
+      <div className="bubble bubble8"></div>
+    </section>s
 
+    <section className="section sectionfour">
+      <h2><span className="fancy">Contact</span></h2>
     </section>s
   </div>
   )

@@ -23,3 +23,15 @@
         border-radius: 30% 70% 70% 30%/30% 47% 53% 70%;
     }
 }
+
+@keyframes bubbling {
+    50% {
+        transform: translate(.7rem, .4rem);
+    }
+}
+
+@keyframes bubblingmore {
+    50% {
+        transform: translate(-.5rem, -.3rem);
+    }
+}

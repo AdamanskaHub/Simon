@@ -83,21 +83,6 @@
     margin: 0 auto;
     max-width: 960px;
     height: 100vh;
-}
-
-.sectiontwo {
-    
-    display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 40px;
-grid-row-gap: 0px;
-align-items: center;
-color: rgba(255,255,255,.8);
-    
-    img {
-        border-radius: 50%;
-    }
     h2 {
         font-size: 4.2em;
         color: #fff;
@@ -110,5 +95,138 @@ color: rgba(255,255,255,.8);
         margin-block-end: 4rem;
         line-height: normal;
     }
+}
+
+.sectiontwo {
     
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    align-items: center;
+    color: rgba(255,255,255,.8);
+    
+    img {
+        border-radius: 50%;
+    }
+    
+    
+}
+
+.sectionthree {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(255,255,255,.8);
+    position: relative;
+    background: linear-gradient(90deg, $bg-start 0%, $bg-end 100%);
+    p{
+        max-width: 960px;
+    }
+    .bubble{
+        mix-blend-mode: overlay;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .bubble1{
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(255,255,255,.5);
+        left: 10%;
+        top: 10%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubbling 5s ease-in-out infinite;
+    }
+    .bubble2{
+        width: 7rem;
+        height: 7rem;
+        background-color: rgba(255,255,255,.3);
+        left: 20%;
+        top: 30%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubblingmore 3.5s ease-in-out infinite;
+    }
+    .bubble3{
+        width: 5rem;
+        height: 5rem;
+        background-color: rgba(255,255,255,.3);
+        left: 24%;
+        top: 28%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubbling 5s ease-in-out infinite;
+    }
+    .bubble4{
+        width: 4rem;
+        height: 4rem;
+        background-color: rgba(255,255,255,.3);
+        left: 12%;
+        top: 65%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubblingmore 4.5s ease-in-out infinite;
+    }
+    .bubble5{
+        width: 5rem;
+        height: 5rem;
+        background-color: rgba(255,255,255,.3);
+        left: 50%;
+        top: 20%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubblingmore 3.5s ease-in-out infinite;
+    }
+    .bubble6{
+        width: 8rem;
+        height: 8rem;
+        background-color: rgba(255,255,255,.3);
+        right: 20%;
+        top: 10%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubblingmore 3s ease-in-out infinite;
+    }
+    .bubble7{
+        width: 6rem;
+        height: 6rem;
+        background-color: rgba(255,255,255,.3);
+        right: 18%;
+        top: 15%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubblingmore 5s ease-in-out infinite;
+    }
+    .bubble8{
+        width: 6rem;
+        height: 6rem;
+        background-color: rgba(255,255,255,.3);
+        right: 15%;
+        top: 55%;
+        transition: .5s ease;
+        &:hover{
+            background-color: rgba(255,255,255,.05); 
+        }
+        animation: bubbling 5s ease-in-out infinite;
+    }
+
 }
