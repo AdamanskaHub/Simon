@@ -1,5 +1,6 @@
 ---
-megatitle: At the tip of a thought
+megatitle: 'At the tip '
+megatitle2: of a thought
 subtitle: The focus and all subtitle
 titleone: My goal
 paraone: >-
