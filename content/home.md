@@ -1,5 +1,5 @@
 ---
-megatitle: This is the mega title
+megatitle: At the tip of a thought
 subtitle: The focus and all subtitle
 titleone: My goal
 paraone: >-
@@ -15,6 +15,6 @@ titlethree: My mission
 parathree: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt arcu
   ullamcorper sollicitudin magna sociis ac volutpat.
-image: ../src/images/gatsby-astronaut.png
+image: /assets/pug.jpg
 ---
 
