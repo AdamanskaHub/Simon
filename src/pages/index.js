@@ -66,15 +66,16 @@ export const query = graphql`
           childMarkdownRemark {
             frontmatter {
               megatitle
-              subtitle
-              titleone
               paraone
-              titletwo
-              paratwo
-              titlethree
               parathree
+              paratwo
+              subtitle
+              title
+              titleone
+              titlethree
+              titletwo
+            }
           }
-        }
       }
     }
   }
