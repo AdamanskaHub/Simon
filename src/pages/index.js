@@ -36,7 +36,8 @@ const IndexPage = (props) => {
 
       <section className="section sectiontwo">
         <div className="portrait">
-          <img src={data.image} alt="Simon" />
+          {/* <img src={data.image} alt="Simon" /> */}
+          <img src={img} alt="Simon" />
         </div>
         <div>
           <h2><span className="fancy">{data.titleone}</span></h2>
@@ -102,7 +103,6 @@ export const query = graphql`
               titleone
               titlethree
               titletwo
-              image
             }
           }
       }
