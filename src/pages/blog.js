@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link,graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,16 +8,21 @@ import SEO from "../components/seo"
 
 class BlogPage extends React.Component {
   render(props) {
-
-    const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props
+    const x = data.allFile.edges.node.childMarkdownRemark.frontmatter
+    console.log(x)
+    // const data = this.props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+    // const posts = data.allMarkdownRemark.edges
+    // const data = props
+    // const siteTitle = data.site.siteMetadata.title
+    // const posts = data.allMarkdownRemark.edges
 
     return(
       <>
         <SEO title="Blog" />
         <h1>Hi from the blog page</h1>
         <Link to="/">Go back to the homepage</Link>
-        {posts.map(({ node }) => {
+        {/* {posts.map(({ node }) => {
           return(
 <>
           <p>{node.frontmatter.date}</p>
@@ -28,7 +33,7 @@ class BlogPage extends React.Component {
           )
           
         }
-        )}
+        )} */}
 
       </>
     )
@@ -38,7 +43,7 @@ class BlogPage extends React.Component {
 
 export default BlogPage
 
-export const blogQueries = graphql`
+export const blogQuery = graphql`
   query {
     allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "blog"}}) {
       edges {
