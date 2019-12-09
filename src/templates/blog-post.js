@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
-  render() {
+  render(props) {
     // const post = this.props.data.markdownRemark
     // const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
@@ -68,18 +68,19 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const blogQuery = graphql`
-  query {
+query {
     allFile (filter: {sourceInstanceName: {eq: "content"} name: {eq: "blog"}}) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              description
-
+        edges {
+            node {
+                childMarkdownRemark {
+                    html
+                    frontmatter {
+                        title
+                        description
+                        date
+                    }
+                }
             }
-          }
-      }
+        }
     }
-  }
 }`
